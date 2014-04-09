@@ -13,6 +13,20 @@ document.getElementById('exampleForm').onsubmit =function(){
 			console.log(notify);
 			var body = document.getElementById('body');
 			body.appendChild(notify);
+			manipulateDOM()
 		}
-	}
+	}	 
 };
+	// appends new elements to the DOM
+	var manipulateDOM = function(){
+		var body = document.getElementById('body');
+		var	newDiv = document.createElement('div');
+		newDiv.id = 'gameContent';
+	    console.log(newDiv);
+	    var wrapper = document.createElement('canvas')
+	    wrapper.id = 'gameCanvas';
+	    
+		body.appendChild(newDiv);
+	    newDiv.appendChild(wrapper);
+		
+	};
