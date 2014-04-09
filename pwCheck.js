@@ -28,5 +28,4 @@ document.getElementById('exampleForm').onsubmit =function(){
 	    
 		body.appendChild(newDiv);
 	    newDiv.appendChild(wrapper);
-		
 	};
